@@ -4,7 +4,7 @@ const Container = styled.div`
   width: 100%;
 `;
 const Wrapper = styled.div`
-  border: 1px solid black;
+  /* border: 1px solid black; */
   max-width: 1440px;
   margin: auto;
   display: flex;

@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: "SM-S908EDRDXXV",
     types: ["sản phẩm mới", "thu cũ đổi mới"],
@@ -157,5 +157,3 @@ const products = [
     notif: "add",
   },
 ];
-
-export { products };

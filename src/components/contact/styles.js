@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 `;
 const Wrapper = styled.div`
   position: relative;
   max-width: 1440px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: auto;
-  padding: 100px;
+  padding: 80px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
