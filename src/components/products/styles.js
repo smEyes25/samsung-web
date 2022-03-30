@@ -186,9 +186,10 @@ const MiddleLine = styled.span`
 `;
 
 const ProductButton = styled.button`
-  width: 80%;
+  /* width: 80%; */
   border: 1px solid #000;
   background-color: transparent;
+  width: 100%;
   height: 45px;
   border-radius: 30px;
   font-size: 12px;

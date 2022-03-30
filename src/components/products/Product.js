@@ -31,6 +31,7 @@ import {
   ProductButton,
 } from "./styles";
 import { products } from "../../data/Itemdata";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   return (
@@ -101,13 +102,15 @@ const Product = () => {
                     </Tax>
                   )}
                 </ProductNotifPrice>
-                <ProductButton>
-                  {product.notif === "notif"
-                    ? "THÔNG BÁO HÀNG VỀ"
-                    : product.notif === "order"
-                    ? "ĐẶT HÀNG TRƯỚC"
-                    : "THÊM VÀO GIỎ HÀNG"}
-                </ProductButton>
+                <Link to="/detail" style={{ height: "45px", width: "80%" }}>
+                  <ProductButton>
+                    {product.notif === "notif"
+                      ? "THÔNG BÁO HÀNG VỀ"
+                      : product.notif === "order"
+                      ? "ĐẶT HÀNG TRƯỚC"
+                      : "THÊM VÀO GIỎ HÀNG"}
+                  </ProductButton>
+                </Link>
               </ProductPrice>
             </Products>
           ))}

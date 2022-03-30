@@ -19,13 +19,16 @@ import LogoImg from "../../picture/logo.png";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { Link } from "react-router-dom";
 
 const Narbar = () => {
   return (
     <Container>
       <Wrapper>
         <WrapperLogo href="#">
-          <Logo src={LogoImg} />
+          <Link to="/">
+            <Logo src={LogoImg} />
+          </Link>
         </WrapperLogo>
 
         <MenuItem>
@@ -73,8 +76,13 @@ const Narbar = () => {
               <Login>
                 <Content>
                   <AccountCircleOutlinedIcon />
-                  <ContentClick href="#">Đăng nhập</ContentClick> /
-                  <ContentClick href="#">Sign-Up</ContentClick>
+                  <Link to="/signin" style={{ textDecoration: "none" }}>
+                    <ContentClick href="#">Đăng nhập</ContentClick>
+                  </Link>
+                  /
+                  <Link to="/signin" style={{ textDecoration: "none" }}>
+                    <ContentClick href="#">Sign-Up</ContentClick>
+                  </Link>
                 </Content>
                 <Content>
                   <ContentClick href="#">Đơn hàng</ContentClick>
